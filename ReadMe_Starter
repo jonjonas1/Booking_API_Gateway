@@ -1,0 +1,27 @@
+READ ME: Booking API Gateway
+	Spring cloud API Gateway: its single entry point to multiple microservices. 
+	An API Gateway acts as a single entry point for a collection of microservices. 
+	Its like a proxy that routes the request to the appropriate microservices and returns response to the client. 
+	Any external client cannot access the microservices directly but can access them only through the application gateway
+
+Dependents on Booking_EurekaServer
+
+* This application runs only after Booking_EurekaServer runs success: Run as Spring Boot App
+* Right click on "BookingGuestApplication.java" Run as Spring Boot App
+* This app is discoverable by Eureka Server app. 
+
+Run 
+	Booking_Guest
+	Booking_Room
+
+local browser: http://localhost:9091 is not valid yet
+
+=================================================================
+
+
+Call by room id only
+	http://localhost:9090/api/rooms/2
+Calls rood id and which guest reserved the room
+	http://localhost:9090/api/rooms/id/3
+Call by room status. true(available), false(reserved)	
+	http://localhost:9090/api/rooms/status/true

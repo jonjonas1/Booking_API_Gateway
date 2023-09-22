@@ -1,0 +1,23 @@
+server:
+  port: 9090
+  
+
+spring:
+  application:
+    name: API_Gateway
+    
+    
+  cloud:
+    gateway:
+      routes:
+      - id: BOOKING_GUEST
+        uri:
+          http://localhost:8081
+        predicates:
+        - Path=/api/guests/**
+        
+      - id: BOOKING_ROOM
+        uri:
+          http://localhost:8080
+        predicates:
+        - Path=/api/rooms/**
