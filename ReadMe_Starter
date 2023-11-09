@@ -6,15 +6,22 @@ READ ME: Booking API Gateway
 
 Dependents on Booking_EurekaServer
 
-* This application runs only after Booking_EurekaServer runs success: Run as Spring Boot App
-* Right click on "BookingGuestApplication.java" Run as Spring Boot App
-* This app is discoverable by Eureka Server app. 
+This application runs only after Booking_EurekaServer runs success.
 
-Run 
-	Booking_Guest
-	Booking_Room
+* 1. Right click on "Booking_EurekaServer" Run as Spring Boot App
+* 2. Right click on "BookingGuestApplication.java" Run as Spring Boot App
+* 3. Right click on 'Booking_Room' service Run as Spring Boot App 
+* 4. Right click on "Booking_API_Gateway" Run as Spring Boot App
 
-local browser: http://localhost:9091 is not valid yet
+* This app is discoverable by Eureka Server app: Open a browser and navigate to http://localhost:8761
+	Under Application tab: user able to see 3 running applications
+		"API_GATEWAY"
+		"BOOKING_GUEST"
+		"BOOKING_ROOM"
+
+To access the http://localhost:9090/api/rooms or (guests) 
+Credentials are registered inside application.yml
+
 
 =================================================================
 
