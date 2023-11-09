@@ -21,3 +21,10 @@ spring:
           http://localhost:8080
         predicates:
         - Path=/api/rooms/**
+        
+        
+  security:
+    user:
+      name: jon
+      password: john
+          
