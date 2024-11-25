@@ -21,6 +21,8 @@ This application runs only after Booking_EurekaServer runs success.
 
 To access the http://localhost:9090/api/rooms or (guests) 
 Credentials are registered inside application.yml
+username: user
+password: is on the console log
 
 
 =================================================================
@@ -28,7 +30,12 @@ Credentials are registered inside application.yml
 
 Call by room id only
 	http://localhost:9090/api/rooms/2
-Calls rood id and which guest reserved the room
+Calls room id and which guest reserved the room
 	http://localhost:9090/api/rooms/id/3
 Call by room status. true(available), false(reserved)	
+	http://localhost:9090/api/rooms/status/true
+	http://localhost:9090/api/rooms/guest/2
+	
+	http://localhost:9090/api/guests/roomid/6
+	
 	http://localhost:9090/api/rooms/status/true
