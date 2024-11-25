@@ -22,9 +22,9 @@ spring:
         predicates:
         - Path=/api/rooms/**
         
-        
-  security:
-    user:
-      name: jon
-      password: john
+  # // Commenting out below. implementing custome credentials
+  #security:
+   # user:
+    #  name: jon
+     # password: john
           
